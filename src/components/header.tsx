@@ -59,10 +59,10 @@ export default function Header() {
         variants={sidebarVariants}
         className="fixed top-16 right-0 h-[calc(100vh-64px)] w-64 bg-gray-800 dark:bg-gray-900 text-white py-4 space-y-4 shadow-lg z-50"
       >
-        <Link href="/" className="block text-center text-white hover:bg-gray-700 py-2">Home</Link>
-        <Link href="/about" className="block text-center text-white hover:bg-gray-700 py-2">About</Link>
-        <Link href="/projects" className="block text-center text-white hover:bg-gray-700 py-2">Projects</Link>
-        <Link href="/CV" className="block text-center text-white hover:bg-gray-700 py-2">CV</Link>
+        <Link href="/" className="block text-center text-white hover:bg-gray-700 py-2" onClick={() => setIsOpen(!isOpen)}>Home</Link>
+        <Link href="/about" className="block text-center text-white hover:bg-gray-700 py-2" onClick={() => setIsOpen(!isOpen)}>About</Link>
+        <Link href="/projects" className="block text-center text-white hover:bg-gray-700 py-2" onClick={() => setIsOpen(!isOpen)}>Projects</Link>
+        <Link href="/CV" className="block text-center text-white hover:bg-gray-700 py-2" onClick={() => setIsOpen(!isOpen)}>CV</Link>
       </motion.div>
     </>
   );
