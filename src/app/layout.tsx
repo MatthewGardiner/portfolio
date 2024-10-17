@@ -1,7 +1,15 @@
-// app/layout.tsx
 import './globals.css';
 import Header from '@/components/header';  // Adjust path if necessary
 import Footer from '@/components/footer';
+
+
+export const metadata = {
+  title: 'Home | Matthew Gardiner',
+  description: 'Homepage of my portfolio.',
+  icons: {
+    icon: '/favicon.svg',
+  },
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
